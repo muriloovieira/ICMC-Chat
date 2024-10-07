@@ -14,11 +14,11 @@ const newPost = () => {
             
                 <View style={styles.formEntry}>
                     <Text style={styles.firstInput}>Descrição:</Text>
-                    <TextInput style={styles.inputContentDescription} value={text}/>
+                    <TextInput style={styles.inputContentDescription} value="string"/>
                 </View>
                 <View style={styles.formEntry}>
                     <Text style={styles.inputName}>Imagens:</Text>
-                    <TextInput style={styles.inputContentImage} value={text}/> 
+                    <TextInput style={styles.inputContentImage} value="string"/> 
                 </View>
             
             <TouchableOpacity style={styles.submitImageButton}>
@@ -36,55 +36,50 @@ const styles = StyleSheet.create({
     
     button: {
         fontSize: 1.6,
-        backgroundColor: rgb(13, 240, 133, 0.7),
+        backgroundColor: 'rgb(13, 240, 133, 0.7)',
         paddingVertical: 10,
         paddingHorizontal: 30,
-        border: none,
+        borderWidth: 0,
         bordeRadius: 1,
     
-        justifySelf: center,
-        alignSelf: center,
+        justifySelf: 'center',
+        alignSelf: 'center',
     },
     
     newPostPage: {
-        display: flex,
-        flexDirection: column,
     },
     
     body: {
         backgroundColor: '#daf7e9',
         flexGrow: 1,
     
-        display:flex,
-        flexDirection: column,
-        justifyContent: flex-start,
+        justifyContent: 'flex-start',
     },
     
     formEntry: {
         marginVertical: 0,
         marginHorizontal:10,
     
-        display: flex, 
-        flexDirection: column,
     },
     
     inputName: {
         marginBottom: 2,
     },
     
-    inputContentDescription, inputContentImage: {
-        borderRadius: 0.8,
-        backgroundColor: rgba(47, 198, 180, 0.21),
-        border: white,
-        padding: 3,
-    },
-    
     inputContentDescription: {
+        borderRadius: 0.8,
+        backgroundColor: 'rgba(47, 198, 180, 0.21)',
+        border: 'white',
+        padding: 3,
         height: 10,
     },
     
     inputContentImage: {
         height: 52,
+        borderRadius: 0.8,
+        backgroundColor: 'rgba(47, 198, 180, 0.21)',
+        border: 'white',
+        padding: 3,
     },
     
     submitImageButton: {
@@ -93,27 +88,26 @@ const styles = StyleSheet.create({
     },
     
     header: {
-        display: flex,
         padding: 10,
-        alignItems: center,
+        alignItems: 'center',
     },
     
     headerText: {
         flex: 1,
-        textAlign: center,
+        textAlign: 'center',
         fontSize: 2.5,
     },
     
     postButton: {
         fontSize: 1,
-        backgroundColor: rgb(13, 240, 133, 0.7),
+        backgroundColor: 'rgb(13, 240, 133, 0.7)',
         paddingVertical: 5,
         paddingHorizontal: 10,
-        border: none,
+        borderWidth: 0,
         borderRadius: 1,
     
-        justifySelf: center,
-        alignSelf: center,
+        justifySelf: 'center',
+        alignSelf: 'center',
     },
     
     firstInput: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, TextInput, StyleSheet} from 'react-native';
 import { useNavigation } from '@react-navigation/native';  // Hook para navegação  
-import logoDay from "../assets/images/adaptive-icon.png";
+import logoDay from "../../assets/images/adaptive-icon.png";
 
 export default function Index() {
     const navigation = useNavigation();
@@ -22,11 +22,11 @@ export default function Index() {
                 
                     <View style={styles.formEntry}>
                         <Text style={styles.inputName}>Email:</Text>
-                        <TextInput style={styles.inputContent} value={text}/>
+                        <TextInput style={styles.inputContent} value="string"/>
                     </View>
                     <View style={styles.formEntry}>
                         <Text style={styles.inputName}>Senha:</Text>
-                        <TextInput style={styles.inputContent} value={password}/>
+                        <TextInput style={styles.inputContent} value="string"/>
                     </View>
              
                 <TouchableOpacity 
@@ -52,58 +52,47 @@ export default function Index() {
 const styles = StyleSheet.create({
     img: {
         height: 15,
-        width: auto,
         marginBottom: 16,
     },
     
     loginPage: {
-        display: flex,
-        flexDirection: column,
-    },
-    
-    header, body, footer: {
-        backgroundColor: '#daf7e9',
-    },
-    
-    header, footer: {
-        padding: 10,
-        textAlign: center, 
     },
     
     header: {
+        padding: 10,
+        textAlign:'center', 
+        backgroundColor: '#daf7e9',
         fontSize:1.5, /*adequar ao resto do projeto*/
     },
     
     body: {
+        backgroundColor: '#daf7e9',
         marginVertical: 2,
         marginHorizontal: 0,
         paddingTop: 8,
-        flex: auto,
+        flexGrow: 1,
     
-        display:flex,
-        flexDirection: column,
-        justifyContent: flex-start,
+        justifyContent: 'flex-start',
     },
     
     footer: {
+        padding: 10,
+        textAlign:'center', 
+        backgroundColor: '#daf7e9',
         paddingVertical: 10,
         paddingHorizontal: 5,
 
-        display:flex,
-        flexDirection: column,
     },
     
     logo: {
-        alignSelf: center,
-        textAlign: center,
+        alignSelf: 'center',
+        textAlign: 'center',
     },
     
     formEntry: {
         marginVertical: 0,
         marginHorizontal:10,
     
-        display: flex,
-        flexDirection: column,
     },
     
     inputName: {
@@ -113,21 +102,21 @@ const styles = StyleSheet.create({
     inputContent: {
         borderRadius: 0.8,
         height: 28,
-        backgroundColor: rgba(47, 198, 180, 0.21),
-        border: white,
+        backgroundColor: 'rgba(47, 198, 180, 0.21)',
+        border: 'white',
         padding: 3,
     },
     
     loginButton: {
         fontSize: 1.6,
-        backgroundColor: rgb(13, 240, 133, 0.7),
+        backgroundColor: 'rgb(13, 240, 133, 0.7)',
         paddingVertical: 10,
         paddingHorizontal: 30,
-        border: none,
+        borderWidth: 0,
         borderRadius: 1,
     
-        justifySelf: center,
-        alignSelf: center,
+        justifySelf: 'center',
+        alignSelf: 'center',
     
         maxWidth: 30,
         marginTop: 16,
@@ -135,18 +124,17 @@ const styles = StyleSheet.create({
     
     signupButton: {
         fontSize: 1.6,
-        backgroundColor: rgb(13, 240, 133, 0.7),
+        backgroundColor: 'rgb(13, 240, 133, 0.7)',
         paddingVertical: 10,
         paddingHorizontal: 30,
-        border: none,
+        borderWidth: 0,
         borderRadius: 1,
     
-        justifySelf: center,
-        alignSelf: center,
+        justifySelf: 'center',
+        alignSelf: 'center',
     
-        flex: auto,
+        flexGrow: 1,
         minWidth: 100,
         marginTop: 16,
-        flex: auto,
     },
 });

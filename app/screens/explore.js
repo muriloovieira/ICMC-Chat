@@ -50,13 +50,12 @@ const styles = StyleSheet.create({
     img: {
         width: 6,
     
-        alignSelf: center,
-        alignContent: center
+        alignSelf: 'center',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     
     explorePage: {
-        display: flex,
-        flexDirection: column,
     },
     
     body: {
@@ -66,7 +65,6 @@ const styles = StyleSheet.create({
     },
     
     formEntry: {
-        display: flex,
         paddingHorizontal:4,
         gap: 1,
     },
@@ -74,8 +72,8 @@ const styles = StyleSheet.create({
     inputContent: {
         borderRadius: 0.8,
         height: 28,
-        backgroundColor: rgba(47, 198, 180, 0.21),
-        border: white,
+        backgroundColor: 'rgba(47, 198, 180, 0.21)',
+        border: 'white',
         padding: 3,
         
         flexGrow: 1,

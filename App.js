@@ -23,4 +23,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Expo.registerRootComponent(App);
