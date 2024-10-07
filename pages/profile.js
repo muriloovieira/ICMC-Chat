@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Notifications from './Notifications'; // Descomentei e corrigi a importação
-import EditProfile from './EditProfile';     // Descomentei e corrigi a importação
+import EditProfile from './editProfile/EditProfile';     // Descomentei e corrigi a importação
 
 const Stack = createStackNavigator();
 

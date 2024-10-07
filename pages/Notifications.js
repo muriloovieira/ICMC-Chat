@@ -40,9 +40,6 @@ const Notifications = () => {
           <Text style={styles.footerText}>Feed</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.footerButton}>
-          <Text style={styles.footerText}>Chat</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.footerButton}>
           <Text style={styles.footerText}>Explorar</Text>
         </TouchableOpacity>
         <TouchableOpacity 
